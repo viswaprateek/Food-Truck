@@ -1,0 +1,110 @@
+/* HomePage.css */
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  /* height: 50vh; */
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+div {
+  /* height: 100%; */
+  /* width: 100%; */
+  /* padding: 10px; */
+  /* font-size: 20px; */
+  /* background-color: lightskyblue; */
+}
+.home-page {
+  font-family: Arial, sans-serif;
+  color: #333;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #333;
+  color: #ffffff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1rem;
+   
+}
+.hero-section {
+  background-color: #f2f2f2;
+  padding: 2rem;
+  text-align: center;
+}
+
+.recipes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.recipe-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 1rem;
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+}
+
+.recipe-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.view-recipe {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #333;
+  text-decoration: none;
+  background-color: #f2f2f2;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.view-recipe:hover {
+  background-color: #ddd;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  font-size: 0.8rem;
+}

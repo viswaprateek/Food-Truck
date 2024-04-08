@@ -1,0 +1,55 @@
+/* SigninPage.css */
+
+.signin-page {
+    width: 100%;
+    max-width: 420px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.signin-page form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding-bottom: 1rem;
+}
+
+.signin-page label,
+.signin-page button {
+    margin-top: 1rem;
+}
+
+.signin-page button {
+    padding: 0.5rem;
+}
+
+.signin-page .hide {
+    display: none;
+}
+
+.signin-page .valid {
+    color: limegreen;
+    margin-left: 0.25rem;
+}
+
+.signin-page .invalid {
+    color: red;
+    margin-left: 0.25rem;
+}
+
+.signin-page .errmsg {
+    background-color: lightpink;
+    color: firebrick;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.signin-page .line {
+    display: inline-block;
+}
