@@ -14,8 +14,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/HomePage/Home.jsx';
 import SignupPage from './pages/SignupPage/SignupPage.jsx';
 import SigninPage from './pages/SigninPage/SigninPage.jsx';
+import MenuPage from './pages/MenuPage/MenuPage.jsx';
 // import RootLayout from './RootLayout.jsx';
-// import MenuPage from './pages/MenuPage/MenuPage';
+// import MenuPage from './pages/MenuPage/MenuPage.jsx';
 // import BillingPage from './pages/BillingPage/BillingPage';
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route exact path="/signup" element={<SignupPage />} />
         <Route exact path="/signin" element={<SigninPage />} />
+        <Route exact path="/menu" element={<MenuPage />} />
 
         {/* </Route> */}
       </Routes>
