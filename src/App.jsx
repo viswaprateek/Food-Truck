@@ -15,6 +15,9 @@ import Home from './pages/HomePage/Home.jsx';
 import SignupPage from './pages/SignupPage/SignupPage.jsx';
 import SigninPage from './pages/SigninPage/SigninPage.jsx';
 import MenuPage from './pages/MenuPage/MenuPage.jsx';
+import IndianRecipePage from './pages/recipe/Indian.jsx';
+import ItalianRecipePage from './pages/recipe/Italian.jsx';
+import ChineseRecipePage from './pages/recipe/Chinese.jsx'
 // import RootLayout from './RootLayout.jsx';
 // import MenuPage from './pages/MenuPage/MenuPage.jsx';
 // import BillingPage from './pages/BillingPage/BillingPage';
@@ -44,6 +47,10 @@ function App() {
         <Route exact path="/signup" element={<SignupPage />} />
         <Route exact path="/signin" element={<SigninPage />} />
         <Route exact path="/menu" element={<MenuPage />} />
+        <Route exact path="/recipe/1" element={<IndianRecipePage />} />
+        <Route exact path="/recipe/2" element={<ChineseRecipePage />} />
+        <Route exact path="/recipe/3" element={<ItalianRecipePage />} />
+
 
         {/* </Route> */}
       </Routes>

@@ -7,18 +7,21 @@ const Home = () => {
   const recipes = [
     {
       id: 1,
-      title: 'Spaghetti Carbonara',
-      image: 'https://via.placeholder.com/150',
+      title: 'Indian',
+      image: 'https://t4.ftcdn.net/jpg/04/36/36/57/360_F_436365754_z3i5Es0sFmZuLY6GZIzdiU01v9HqpGZe.jpg ',
+      para:'Rich tapestry of flavors, spices, and textures, reflecting its diverse cultural heritage.'
     },
     {
       id: 2,
-      title: 'Chicken Alfredo',
-      image: 'https://via.placeholder.com/150',
+      title: 'Chinese',
+      image: 'https://ik.imagekit.io/awwybhhmo/satellite_images/chinese/beyondmenu/about_us/4.jpg?tr=w-640',
+      para:'harmonious blend of savory, sweet, sour, and spicy flavors, showcased in dishes like crispy'
     },
     {
       id: 3,
-      title: 'Vegetable Stir-Fry',
-      image: 'https://via.placeholder.com/150',
+      title: 'Italian',
+      image: 'https://www.thesun.co.uk/wp-content/uploads/2020/08/NINTCHDBPICT000603046726.jpg',
+      para:'quality ingredients, from the comforting embrace of creamy risotto to the robust flavors '
     },
   ];
 
@@ -41,6 +44,7 @@ const Home = () => {
           <div className="recipe-card" key={recipe.id}>
             <img src={recipe.image} alt={recipe.title} />
             <h2>{recipe.title}</h2>
+            <h4>{recipe.para}</h4>
             <Link to={`/recipe/${recipe.id}`} className="view-recipe">View Recipe</Link>
           </div>
         ))}

@@ -1,0 +1,18 @@
+/* .recipe-details {
+    text-align: center;
+  } */
+  
+  .recipe-title {
+    margin-bottom: 50px;
+    color: black;
+    display: block;
+    text-align: center;
+  }
+  
+  .recipe-image img {
+    width: 700px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  

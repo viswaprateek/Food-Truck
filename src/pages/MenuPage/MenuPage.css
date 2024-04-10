@@ -9,7 +9,7 @@
   }
   
   .page-title {
-    font-size: 32px;
+    font-size: 52px;
     font-weight: bold;
     margin-bottom: 30px;
     color: #333;
@@ -28,20 +28,22 @@
     border: 1px solid #ccc;
     border-radius: 5px 0 0 5px;
     font-size: 16px;
+    
     outline: none;
   }
   
   .search-button {
     
-    background-color: #0f8aef;
-    color: #ffffff;
+    background-color: #28d7cb;
+    color: #000000;
     border: none;
-    border-radius: 0 5px 5px 0;
+    border-radius: 20px;
     padding: 12px 20px;
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
     margin-bottom: 20px;
+    font-weight: bold; 
   }
   
   .search-button:hover {
@@ -64,6 +66,7 @@
   .product-card {
     border: 1px solid #ddd;
     border-radius: 10px;
+    color: #000;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -111,4 +114,92 @@
   .view-details-button:hover {
     background-color: #0056b3;
   }
+  
+
+
+
+  /* billing page  */
+
+  .billing-page {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .billing-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .billing-items {
+    margin-bottom: 20px;
+  }
+  
+  .billing-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+  }
+  
+  .billing-item span {
+    font-size: 16px;
+  }
+  
+  .billing-item button {
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .billing-item button:hover {
+    background-color: #c82333;
+  }
+  
+  .total-bill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .total-bill span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .checkout-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .checkout-button:hover {
+    background-color: #0056b3;
+  }
+
+  .billing-item  {
+    color: #000;
+    font-weight: bold;
+  }
+  .total-bill{
+    color: #00ff62;
+    font-weight: bold;
+  }
+  
+
   
