@@ -45,14 +45,14 @@ function BillingPage({ cartItems, removeFromCart }) {
         {cartItems.map((item, index) => (
           <div key={index} className="billing-item">
             <span>{item.title}</span>
-            <span>${item.price}</span>
+            <span>₹{item.price}</span>
             <button onClick={() => removeFromCart(index)}>Remove</button>
           </div>
         ))}
       </div>
       <div className="total-bill">
         <span>Total:</span>
-        <span>${totalBill}</span>
+        <span>₹{totalBill}</span>
       </div>
     </div>
   );
@@ -136,13 +136,14 @@ function MenuPage() {
           onSearchChange={handleSearchChange}
           onSearchSubmit={handleSearchSubmit}
         />
+        <BillingPage cartItems={cartItems} removeFromCart={removeFromCart} />
+        <button className="checkout-button">Checkout</button>
         <div className="product-grid">
           {filteredProducts.map((product) => (
             <ProductCard key={product.id} product={product} addToCart={addToCart} />
           ))}
         </div>
-        <BillingPage cartItems={cartItems} removeFromCart={removeFromCart} />
-        <button className="checkout-button">Checkout</button>
+        
       </div>
     </div>
   );
